@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>sgame.com</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,100&family=Sacramento&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Shantell+Sans:wght@300&display=swap" rel="stylesheet">
+<style>
+  *{
+    margin:0;
+  }
+  body{
+    background-color:white;
+  }
+.head1{
+width:100%;
+height:80px;
+border-top:0;
+margin:0 auto 10px auto;
+background-color:#178ca4;
+color:white;
+
+}
+.headtext{
+  position:relative;
+ /* right:600px;*/
+  font-family: 'Shantell Sans', cursive;
+  font-weight: bold;
+  font-size:3em;
+}
+.borderdiv{
+  width:130px;
+  height:130px;
+  border-radius:100%;
+  background-color:#3A8891;
+}
+.maindiv{
+  position:relative;
+  bottom:13px;
+  left:5px;
+  width:120px;
+  height:120px;
+  border-radius:100%;
+  background-color:#0E5E6F;
+}
+.maintable{
+  margin:50px auto 100px auto;
+}
+.subdiv1{
+position:relative;
+width:90px;
+height:90px;
+border-radius:100%;
+top:15px;
+background-color:#3A8891;
+}
+.subdiv2{
+position:relative;
+width:63px;
+height:63px;
+border-radius:100%;
+top:14px;
+background-color:#0E5E6F;
+}
+.subdiv3{
+position:relative;
+width:25px;
+height:25px;
+border-radius:100%;
+top:19px;
+background-color:#3A8891;
+}
+.img1{
+width:80px;
+height:80px;
+text-align:center;
+}
+.subtable{
+  border-radius:15px;
+  width:1100px;
+  height:700px;
+/*background-color:#FFE1E1;*/
+
+}
+.h123{
+  color:#FFE1E1;
+}
+.score1{
+width:150px;
+height:200px;
+border-radius:15px;
+position:relative;
+right:30px;
+background-color:#FF0075;
+}
+.score2{
+width:150px;
+height:200px;
+border-radius:15px;
+position:relative;
+left:30px;
+background-color:#FF0075;
+}
+.h3score{
+  position:relative;
+  font-size:2em;
+  left:25px;
+}
+.scoresubdiv{
+  width:120px;
+  height:120px;
+  border-radius:10px;
+  position:relative;
+  left:15px;
+  /*bottom:20px;*/
+  background-color:#FF8FB1;
+}
+#scorenum1{
+  font-size:3em;
+  position:relative;
+  left:45px;
+  top:30px;
+}
+#scorenum2{
+  font-size:3em;
+  position:relative;
+  left:45px;
+  top:30px;
+}
+.borderdiv:hover, .maindiv1:hover, .maindiv:hover, .subdiv1:hover, .subdiv2:hover, .subdiv3:hover{
+  opacity:0.8;
+}
+</style>
+</head>
+<body>
+  <script type="text/javascript" src="javascript.js">
+ 
+  </script>
+<div class="head1"><center><h1 class="headtext">FlipGame</h1></center><div>
+<table class="maintable">
+<tr>
+<td><div class="score1"><h3 class="h3score" id="h3score1"> Player-1 </h3><div class="scoresubdiv"><h1 Id="scorenum1">0</h1></div></div></td>
+<td>
+<center>
+<div class="subtable">
+<table cellspacing="5">
+  <tr>
+   <td><div class="borderdiv"><img Id="maindiv1" src="" /><div class="maindiv" Id="now1"><center><div class="subdiv1" Id="hid" onclick="game(0)"><center><div class="subdiv2"><center><div class="subdiv3"></div></center></div></center></div></center></div></div></td>
+   <td><div class="borderdiv"><img Id="maindiv2" src="" /><div class="maindiv" Id="now2"><center><div class="subdiv1" Id="hid" onclick="game(1)"><center><div class="subdiv2"><center><div class="subdiv3"></div></center></div></center></div></center></div></div></td>
+   <td><div class="borderdiv"><img Id="maindiv3" src="" /><div class="maindiv" Id="now3"><center><div class="subdiv1" Id="hid"onclick="game(2)"><center><div class="subdiv2"><center><div class="subdiv3"></div></center></div></center></div></center></div></div></td>
+   <td><div class="borderdiv"><img Id="maindiv4" src="" /><div class="maindiv" Id="now4"><center><div class="subdiv1" Id="hid"onclick="game(3)"><center><div class="subdiv2"><center><div class="subdiv3"></div></center></div></center></div></center></div></div></td>
+   <td><div class="borderdiv"><img Id="maindiv5" src="" /><div class="maindiv" Id="now5"><center><div class="subdiv1" Id="hid"onclick="game(4)"><center><div class="subdiv2"><center><div class="subdiv3"></div></center></div></center></div></center></div></div></td>
+   <td><div class="borderdiv"><img Id="maindiv6" src="" /><div class="maindiv" Id="now6"><center><div class="subdiv1" Id="hid"onclick="game(5)"><center><div class="subdiv2"><center><div class="subdiv3"></div></center></div></center></div></center></div></div></td>
+   <td><div class="borderdiv"><img Id="maindiv7" src="" /><div class="maindiv" Id="now7"><center><div class="subdiv1" Id="hid"onclick="game(6)"><center><div class="subdiv2"><center><div class="subdiv3"></div></center></div></center></div></center></div></div></td>
+  </tr>
+  <tr>
+    <td><div class="borderdiv"><img Id="maindiv8" src="" /><div class="maindiv" Id="now8"><center><div class="subdiv1" Id="hid"onclick="game(7)"><center><div class="subdiv2"><center><div class="subdiv3"></div></center></div></center></div></center></div></div></td>
+   <td><div class="borderdiv"><img Id="maindiv9" src="" /><div class="maindiv" Id="now9"><center><div class="subdiv1" Id="hid"onclick="game(8)"><center><div class="subdiv2"><center><div class="subdiv3"></div></center></div></center></div></center></div></div></td>
+   <td><div class="borderdiv"><img Id="maindiv10" src="" /><div class="maindiv" Id="now10"><center><div class="subdiv1" Id="hid"onclick="game(9)"><center><div class="subdiv2"><center><div class="subdiv3"></div></center></div></center></div></center></div></div></td>
+   <td><div class="borderdiv"><img Id="maindiv11" src="" /><div class="maindiv" Id="now11"><center><div class="subdiv1" Id="hid"onclick="game(10)"><center><div class="subdiv2"><center><div class="subdiv3"></div></center></div></center></div></center></div></div></td>
+   <td><div class="borderdiv"><img Id="maindiv12" src="" /><div class="maindiv" Id="now12"><center><div class="subdiv1" Id="hid"onclick="game(11)"><center><div class="subdiv2"><center><div class="subdiv3"></div></center></div></center></div></center></div></div></td>
+   <td><div class="borderdiv"><img Id="maindiv13" src="" /><div class="maindiv" Id="now13"><center><div class="subdiv1" Id="hid"onclick="game(12)"><center><div class="subdiv2"><center><div class="subdiv3"></div></center></div></center></div></center></div></div></td>
+   <td><div class="borderdiv"><img Id="maindiv14" src="" /><div class="maindiv" Id="now14"><center><div class="subdiv1" Id="hid"onclick="game(13)"><center><div class="subdiv2"><center><div class="subdiv3"></div></center></div></center></div></center></div></div></td>
+  </tr>
+  <tr>
+   <td><div class="borderdiv"><img Id="maindiv15" src="" /><div class="maindiv" Id="now15"><center><div class="subdiv1" Id="hid"onclick="game(14)"><center><div class="subdiv2"><center><div class="subdiv3"></div></center></div></center></div></center></div></div></td>
+   <td><div class="borderdiv"><img Id="maindiv16" src="" /><div class="maindiv" Id="now16"><center><div class="subdiv1" Id="hid"onclick="game(15)"><center><div class="subdiv2"><center><div class="subdiv3"></div></center></div></center></div></center></div></div></td>
+   <td><div class="borderdiv"><img Id="maindiv17" src="" /><div class="maindiv" Id="now17"><center><div class="subdiv1" Id="hid"onclick="game(16)"><center><div class="subdiv2"><center><div class="subdiv3"></div></center></div></center></div></center></div></div></td>
+   <td><div class="borderdiv"><img Id="maindiv18" src="" /><div class="maindiv" Id="now18"><center><div class="subdiv1" Id="hid"onclick="game(17)"><center><div class="subdiv2"><center><div class="subdiv3"></div></center></div></center></div></center></div></div></td>
+   <td><div class="borderdiv"><img Id="maindiv19" src="" /><div class="maindiv" Id="now19"><center><div class="subdiv1" Id="hid"onclick="game(18)"><center><div class="subdiv2"><center><div class="subdiv3"></div></center></div></center></div></center></div></div></td>
+   <td><div class="borderdiv"><img Id="maindiv20" src="" /><div class="maindiv" Id="now20"><center><div class="subdiv1" Id="hid"onclick="game(19)"><center><div class="subdiv2"><center><div class="subdiv3"></div></center></div></center></div></center></div></div></td>
+   <td><div class="borderdiv"><img Id="maindiv21" src="" /><div class="maindiv" Id="now21"><center><div class="subdiv1" Id="hid"onclick="game(20)"><center><div class="subdiv2"><center><div class="subdiv3"></div></center></div></center></div></center></div></div></td>
+  </tr>
+  <tr>
+   <td><div class="borderdiv"><img Id="maindiv22" src="" /><div class="maindiv" Id="now22"><center><div class="subdiv1" Id="hid"onclick="game(21)"><center><div class="subdiv2"><center><div class="subdiv3"></div></center></div></center></div></center></div></div></td>
+   <td><div class="borderdiv"><img Id="maindiv23" src="" /><div class="maindiv" Id="now23"><center><div class="subdiv1" Id="hid"onclick="game(22)"><center><div class="subdiv2"><center><div class="subdiv3"></div></center></div></center></div></center></div></div></td>
+   <td><div class="borderdiv"><img Id="maindiv24" src="" /><div class="maindiv" Id="now24"><center><div class="subdiv1" Id="hid"onclick="game(23)"><center><div class="subdiv2"><center><div class="subdiv3"></div></center></div></center></div></center></div></div></td>
+   <td><div class="borderdiv"><img Id="maindiv25" src="" /><div class="maindiv" Id="now25"><center><div class="subdiv1" Id="hid"onclick="game(24)"><center><div class="subdiv2"><center><div class="subdiv3"></div></center></div></center></div></center></div></div></td>
+   <td><div class="borderdiv"><img Id="maindiv26" src="" /><div class="maindiv" Id="now26"><center><div class="subdiv1" Id="hid"onclick="game(25)"><center><div class="subdiv2"><center><div class="subdiv3"></div></center></div></center></div></center></div></div></td>
+   <td><div class="borderdiv"><img Id="maindiv27" src="" /><div class="maindiv" Id="now27"><center><div class="subdiv1" Id="hid"onclick="game(26)"><center><div class="subdiv2"><center><div class="subdiv3"></div></center></div></center></div></center></div></div></td>
+   <td><div class="borderdiv"><img Id="maindiv28" src="" /><div class="maindiv" Id="now28"><center><div class="subdiv1" Id="hid"onclick="game(27)"><center><div class="subdiv2"><center><div class="subdiv3"></div></center></div></center></div></center></div></div></td>
+  </tr>
+
+</table>
+</div>
+</center>
+</td>
+<td>
+<div class="score2"><h3 class="h3score" id="h3score2"> Player-2 </h3><div class="scoresubdiv"><h1 Id="scorenum2">0</h1></div></div></td>
+</tr>
+</table>
+
+
+</body>
+</html>
